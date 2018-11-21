@@ -1,0 +1,5 @@
+LoadScript c:\path\to\scriptname.rc	;do NOT do LoadScript c:\litestep\step.rc
+;scriptname.rc commands
+*CustomBang !{command name} {command};|{command};|{command}	;semicolons are optional, they pause the script until the application is closed. {command} can be a path or a bang command
+;lScript.exe commands
+lScript.exe {command};|{command};|{command}		;semicolons are optional, they pause the script until the application is closed. {command} can be a path or a bang command
