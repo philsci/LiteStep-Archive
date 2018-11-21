@@ -1,0 +1,6 @@
+*miniscript start "{script name}"
+*miniscript "{command}"
+*miniscript "{command}"
+*miniscript "{command}"	;up to ten commands can be used per miniscript
+*miniscript end
+!miniscript {script name}

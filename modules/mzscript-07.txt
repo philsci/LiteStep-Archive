@@ -1,0 +1,356 @@
+------- mzscript.dll  ver 0.7 --------
+   script module for litestep
+   by Marcus Westerlund - maze
+--------------------------------------
+
+----------
+Disclamer:
+----------
+Use at your own risk (shouldn't be any troubles)
+
+--------
+History:
+--------
+
+ver 0.7
+     - Added !scriptload 
+     - Added !scriptremove
+     - Added !varmul
+     - Added !setlistsep
+     - Added Internal variables to return system properties
+
+ver 0.6
+     - Added !varadd
+     - Added support for saving variables
+     - Added !ifeval
+     - Added more syntax on if bangs
+     - Added support for custom rc-file
+     - Added list functionality
+     - Added var substitution
+     - Added goto,gotoif and lable to script
+     - Added some minor things
+ver 0.5
+     - First version out
+
+
+-------------
+Installation:
+-------------
+LoadModule c:\path to dll\mzscript.dll
+
+(You should know how to do this)
+
+Might have some dificulties with case sensitivity. So if you have any difficulties
+be sure that you have got all your letters in the same case.
+
+------
+Usage:
+------
+
+--step.rc--
+
+mzScriptFile filename
+- Uses filename as scriptfile instead of step.rc (default step.rc)
+
+mzBangChar |
+- What char to use instead of ! för executing bangs. This is usefull
+ for nesting bangs. (defaults to |)
+
+mzListSeparator :
+- Char to separate parts of variables when they are used as lists (defaults to :)
+
+mzAutosaveVars replace/save
+- Automaticly saves variables in rc file in use. "replace" means no new variables vill 
+ be added to file, but the others will be replaced. "save" also adds variables not present 
+ in file. (disable on default)
+
+
+---bangs---
+
+Variable manipulation bangs:
+
+!varSet name The string 
+or !varSet name "The string"
+- Sets name to "The string"
+
+!varRemove name
+- Removes variable name
+
+!varShow name
+- Show context of name
+
+!varRun name
+- executes the contents of name, could be bang or program
+
+!varAdd name number
+- Adds number to variable name. A non valid number vill be same as 0
+
+!varMul name number
+- Multiplies number with name. A non valid number vill be same as 0. Number may be float
+ but name is always integer
+
+!varSave name
+- saves variable "name" to script file
+
+!varReplace name
+- saves variable "name" to script file, but only if it already exists in script file
+
+!varSaveAll replace/save
+- saves all variables to script file, if replace is used then no new var entrys will 
+ be added.
+
+
+If bangs...
+
+!ifExist name [command]
+!ifNExist name [command] 
+- Executes [command] if variable exist (or not)
+
+!ifEq name "string" [command]
+!ifNEq name "string" [command]
+- Executes [command] if variable is equal (or not) to string
+
+!ifeval ("hello" <= "wow") [command]
+- evaluates expression (quite usefull with var substs)
+ Valid comparisons is:
+ "<" less then
+ "<=" less or equal to
+ ">" greater then
+ "=>" greater or equal to
+ "=" equal to
+ "<>" not equal to
+
+
+where [command] can look like follows: 
+    command arg
+    'command arg'
+    'command arg' else '|bang'
+    '|bang hello' '"c:\foo bar\command" world'
+     {command arg}
+     {command arg} else {bang arg}
+
+First string between then ' is executed if true else the second (if it exist)
+Or first string between { and } is executed (a must with nested ifs) if true else
+second string (If it exist).
+
+Other bangs...
+
+!msgbox msg
+- displays msg in msgbox
+
+!exec command
+- executes command, could be bang or program (usefull when invoked from someware else,
+ var subtitution takes place)
+
+!setlistspe s
+- Sets list separator character to s
+
+!scriptload filename
+- Loads script definition file from filename
+
+!scriptremove bang_name_without_!
+- Removes scriptbang bang_name_without_!
+
+
+---scriptfile.rc---
+(deaults to step.rc)
+
+*Script start command
+- will execute command on startup
+
+*Script bang !thebang
+- will start a bangscript who will connected to !thebang
+
+*Script exec command
+- part of a bangscript executes command when bang is invoked
+
+*Script exit
+- Exits script
+
+*Script label labelname
+- Used whith goto and gotoif
+
+*Script goto labelname
+- Jumps to label labelname in script, if label is not found then script is aborted
+
+*Script gotoif ("string1" <> "string2") labelname
+- Jumps to label labelname in script if evaluation of expression is true, if label 
+ is not found then script is aborted. See !ifEval for valid comparisons
+
+*Script ~bang
+- Declares end of bangscript
+
+*Script var name string
+or *Script var name "string"
+- Sets variable name to "string"
+
+
+
+----Substitutions----
+
+This is completly new for 0.6
+Substitutions are made in bangs and in scripts.
+
+%[var]
+- is substituted with is substituted with
+ the contents of variable var. 
+
+%[var:] 
+- is substituted with first part of variable var's contents (till 
+ first list separator)
+
+%[var:_] 
+- is substituted with second part of variable var's contents (from 
+ first list separator)
+
+?["Qustions" "subst on yes" "subst on no"]
+- Pops ut messagebox with message "Question", if yes is pressed 
+ it is substituted with "subst on yes" else it is substituted 
+ with "subst on no"
+
+
+Little example:
+
+Say variable hello if "c:\hi.txt:world.txt"
+- notepad %[hello]
+would execute as "notepad c:\hi.txt:world.txt"
+- notepad %[hello:]
+would execute as "notepad c"
+- notepad %[hello:_]
+would execute as "notepad \hi.txt:world.txt"
+(If separator is set to default value of ":")
+
+
+---Internal vars---
+Internal vars is:
+
+xresolution
+yresolution
+year
+month
+day
+weekday
+hour
+minute
+second
+
+Should be quite obvious what they stand for. And they are used as regular vars.
+
+Example:
+
+!msgbox %[hour]:%[minute]:%[second]
+
+will show current time in a message box
+
+And remember not to alter internal commands. It is possible, but you have to recycle 
+to get them to act as functions again.
+
+--------
+Examples:
+--------
+
+---Simple---
+
+;Start conditions
+*Script var vwm shown
+*Script var bar shown
+*Script start notepad
+
+;First bangscript
+*Script bang !togglebar
+*Script exec !ifeq bar "shown" '|varset bar hidden' else '|varset bar shown'
+*Script exec !toggleslider [1]
+*Script exec !ToggleShortcutGroup 1
+*Script exec !ToggleCommand 
+*Script exec !SystrayToggle 
+*Script exec !ifeq vwm "shown" |VWMRollup
+*Script ~bang
+
+;Second bangscript
+*Script bang !togglevwm
+*Script exec !ifeq vwm "shown" '|varset vwm hidden' else '|varset vwm shown'
+*Script exec !ifeq bar "hidden" |varset vwm shown
+*Script exec !ifneq bar "hidden" |VWMRollup
+*Script exec !ifeq bar "hidden" |togglebar
+*Script ~bang
+
+
+---Advanced---
+
+;Not to be changed by varsave ... using start and !varset instead of var
+;Contains turing program, makes three ones and terminates on two states
+*Script start !varset t_program "one:one::1:r:two:two::1:l:one:one:1:1:l:one:two:1:1::exit"
+
+;Bang used by turing to shift tape
+*Script bang !turing_left
+*Script exec !varset t_left "%[t_right:]:%[t_left]"
+*Script exec !varset t_right "%[t_right:_]"
+*Script ~bang
+
+;Bang used by turing to shift tape
+*Script bang !turing_right
+*Script exec !varset t_right "%[t_left:]:%[t_right]"
+*Script exec !varset t_left "%[t_left:_]"
+*Script ~bang
+
+;A turing bang. Using t_program as turing program
+*Script bang !turing
+*Script exec !varset t_left ""
+*Script exec !varset t_right ""
+*Script exec !varset state "%[t_program:]"
+*Script label start
+*Script exec !varset prog "%[t_program:_]"
+*Script label loop
+*Script gotoif ("%[prog:]" <> "%[state]") skipp
+*Script exec !varset tmp %[prog:_]
+*Script gotoif ("%[tmp:]" <> "%[t_right:]") skipp
+*Script exec !varset tmp %[tmp:_]
+*Script exec !varset t_right "%[tmp:]:%[t_right:_]"
+*Script exec !varset tmp %[tmp:_]
+*Script exec !ifeval ("%[tmp:]" = "r") |turing_right
+*Script exec !ifeval ("%[tmp:]" = "l") |turing_left
+*Script exec !varset tmp %[tmp:_]
+*Script exec !varset state %[tmp:]
+*Script goto start
+*Script label skipp
+*Script exec !varset prog "%[prog:_]"
+*Script exec !varset prog "%[prog:_]"
+*Script exec !varset prog "%[prog:_]"
+*Script exec !varset prog "%[prog:_]"
+*Script exec !varset prog "%[prog:_]"
+*Script gotoif ("%[prog]" <> "") loop
+*Script exec !varremove tmp
+*Script label loop2
+*Script exec !turing_right 
+*Script gotoif ("%[t_left]" <> "") loop2
+*Script exec !msgbox Result - %[t_right]
+*Script ~bang
+
+
+And this little example shows that there is no limitations on what can be done with
+this script acording to A. Turing
+
+------------
+Some things:
+------------
+ver 0.5
+I hope this will be of some use, I know it has been for me (thats why i wrote it).
+I don't know if there will be more versions to come (is there use for one?), but maybe 
+eventualy I will add sending keystrokes to windows. (Sugestions?)
+
+ver 0.6
+O well. I did do som additions. But now I will probably leave this alown for a while. But 
+you are welcome with sugestions and buggreports.
+
+ver 0.7
+Not much to say. I'm thinking of doing plugin support, but i dont know what that would be 
+good for. Might some day check out the case sensitivity problem.
+
+--------
+Contact:
+--------
+
+Marcus Westerlund
+macce@acc.umu.se
+http://www.acc.umu.se/~macce
+
