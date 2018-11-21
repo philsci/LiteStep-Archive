@@ -1,0 +1,215 @@
+;-----------------------------------------------------------
+; Das ist ein Samplecode für die step.rc vom Thomas Nebel
+; Die Kommentare sind je nach laune in deutsch oder 
+; englisch geschrieben ;-)
+;-----------------------------------------------------------
+
+
+;-----------------------------------------------------------
+; SYSTEM DLL'S
+; hier werden die gewünschten Systemkomponenten geladen.
+; Litestep ist Modular aufgebaut, was eine freie 
+; Konfiguration erlaubt.
+;-----------------------------------------------------------
+LoadModule 	\litestep\wharf.dll				; Wharf dll
+LoadModule 	\litestep\desktop.dll				; Desktop dll
+LoadModule 	\litestep\shortcut.dll				; Shortcut dll
+LoadModule 	\litestep\hotkey.dll				; HotKey dll
+LoadModule 	\litestep\popup.dll				; Popup dll
+
+;------------------------------------------------------------
+; SYSTEM VARIABLES
+; hier werden Systemvariablen gesetzt, die das Erscheinungbild
+; von Litestep verändern. Eine vollständige Liste gibt es 
+; bei www.litestep.com
+;------------------------------------------------------------
+
+HideApplication							; Hide litestep from alt-tab
+NoShowBeta							; Don't show beta information
+PixmapPath 	C:\litestep\images\	 			; Path to find all the icon images
+DefaultBackPix  default.bmp					; Default Background Pixmap
+ModulesPath	C:\LiteStep\modules\				; Path to the modules
+IconPath	C:\LiteStep\Icons\				; Path to the Icons
+ThemePath	C:\Litestep\Themes\				; Path to the Themes
+
+;------------------------------------------------------------
+; WHARF SETTINGS
+;------------------------------------------------------------
+
+WharfTitlebarPix 	wtop.bmp				; Wharf titlebar pic
+WharfBevelWidth 	0					; Border width on wharf items
+WharfPressOffset 	0					; Pixels to indent image on click
+WharfAutoUnpress						; Process action once mouse button is down and back up
+;WharfCloseOnSwitch						; This Setting does not work with animated wharf
+;WharfNoAnim 							; Do not animate wharf
+WharfAnimStep 		64					; Wharf Animation distance
+WharfAnimDelay 		50					; Wharf Animation delay
+WharfDblClickXPosition  150					; Wharf undocked Position - Applied as ScreenWidth - X
+
+
+;------------------------------------------------------------
+; TASK BAR & SYSTEM TRAY SETTINGS
+;------------------------------------------------------------
+
+Notaskbar							; Disable Taskbar
+SystrayOrientation right bottom					; System Tray Orientation
+SystrayWrapCount 8						; System Tray Alignment
+
+;------------------------------------------------------------
+; DESKTOP SETTINGS
+;------------------------------------------------------------
+
+;SetDesktopArea
+;SDALeft 	136
+;SDARight 	997
+;SDATop 	9
+;SDABottom 	760
+
+;------------------------------------------------------------
+; POPUP MENU DEFINITIONS
+; das Popupmenu ist das "Startmenü" von Litestep
+;------------------------------------------------------------
+
+HotListName 		" S i m p l i c i t y "			; Popup menu title
+PopupTitlePix 		bar_2.bmp				; Popup menu title graphic
+PopupEntryPix 		bar2_3.bmp				; Popup menu general graphic
+PopupSelEntryPix 	bar3_3.bmp				; Popup menu selected graphic
+PopupBottomPix		bottom-bar.bmp				; Popup menu bottom graphic
+PopupTitleColor 	E8E8E8					; Popup menu title font color
+PopupEntryColor 	745450					; Popup menu general font color
+PopupSelEntryColor 	E8E8E8					; Popup menu selected font color
+PopupSubMenuHeight 	19					; Popup menu graphic height
+PopupFontFace 		"Arial"					; Popup menu fontPopupFontHeight 	14					; Popup menu font size
+MinPopupWidth 		200					; Popup menu minimum width
+;PopupFixedWidth	200
+NoPopupFolderIcon						; No Popup Folder Icon
+NoPopupBevel							; Popup menu disabled bevel
+;ShowPopupIcons
+PopupIconSize           16
+
+;------------------------------------------------------------
+; VIRTUAL WINDOWS MANAGER SETTINGS
+; die Einstellungen für den virtual windows manager
+;------------------------------------------------------------
+
+VWMNoAuto							; VWM will not switch windows automatically
+VWMNoGathering							; VWM will not gather windows when closing or recycling Litestep
+VWMDesksX		2
+VWMDesksY		2
+VWMVelocity 		300					; VWM switching window resistance
+VWMSecurityDistance 	5					; VWM distance from edge of screen to switch windows
+VWMForeColor 		745450					; VWM Mini-Window color
+VWMBackColor 		FF00FF					; VWM Non-Current Mini-Windows Color
+VWMSelBackColor 	FFFFFF					; VWM Current Mini-Window Select Color
+VWMBorderColor 		745450					; VWM Mini-Window Border Color
+VWMDesksX 		2					; VWM X # of Virtual Windows
+VWMDesksY 		3					; VWM Y # of Virtual Windows
+
+;-----------------------------------------------------------
+; THEME SETTINGS
+; ein einfacher Weg, Themen zu verwalten ist die Benutzung
+; von deb Theme.rc - Dateien. In diesen Files stehen
+; Themenspezifische Informationen, die die in der step.rc
+; eventuel schon gesetzten Einstellungen überschreiben.
+; Daduch muß eine Veränderung der step.rc meist nicht
+; vorgenommen werden.
+;-----------------------------------------------------------
+
+ThemeFile	$ThemePath$Simplicity\theme.rc			; the Theme.rc
+;ThemeFile	$ThemePath$Crimson\theme.rc			; the Theme.rc
+;ThemeFile	$ThemePath$Crimson_Blue_Blood\theme.rc		; the Theme.rc
+;ThemeFile	$ThemePath$bluestepv2_0\theme.rc		; the Theme.rc
+;ThemeFile	$ThemePath$wimacStep\theme.rc			; the Theme.rc
+
+
+;The Definitions in the theme.rc override the settings in the step.rc
+
+;-----------------------------------------------------------
+; HOTKEYS DEFINITIONS
+; Hotkeys sind Tastenkombinationen, die individuel 
+; vorgenommen werden können. Die !## - Befehle sind sog.
+; Bang-Commands - die in der Litestepshell "eingebaut" sind.
+;-----------------------------------------------------------
+
+*Hotkey Win E 		explorer	
+*Hotkey Win I 		"c:\program files\internet explorer\iexplore.exe"
+*Hotkey WIn G		!gather
+*Hotkey Win R 		!Run
+*Hotkey Win T 		!ToggleWharf
+*Hotkey Win C 		!Recycle
+*Hotkey Win L 		!Logoff
+*Hotkey Win Q 		!Shutdown
+*Hotkey Win S 		!SnapShot
+
+
+;-----------------------------------------------------------
+; WHARF
+; hier können Module in das Wharf-Fenster eingebaut werden.
+;-----------------------------------------------------------
+
+*Wharf "LiteStep Time"		$DefaultBackPix$	@$ModulesPath$lstime.dll
+*Wharf "CPU Auslastung"		$DefaultBackPix$	@$ModulesPath$lscpu.dll
+*Wharf "TaskListe"		$DefaultBackPix$	@$ModulesPath$LsTaskMan.app
+*Wharf "LsVWM" 			wbottom.bmp 	   	@$ModulesPath$lsvwm.dll
+
+;-----------------------------------------------------------
+; DESKTOP SHORTCUTS
+; hier werden die Desktopicons festgelegt.
+; die Schreibweise ist *Shortcut <beschreibung> <x-Position> <y-Position> <Icon-normal> <Icon-angewählt> <Icon-geklickt> <Programmpfad>
+;-----------------------------------------------------------
+	  title			pos	normal					mouseover	       			clicked					location
+          --------------------  ------  ----------------------  		--------------------- 			----------------------  		---------------------------------------------------------------
+*Shortcut "explorer" 		10 10 	C:\LiteStep\Icons\MSExplorer1.bmp 	C:\LiteStep\Icons\MSExplorer2.bmp 	C:\LiteStep\Icons\MSExplorer3.bmp    	"C:\WINDOWS\explorer.exe"    
+*Shortcut "Eigene Dateien" 	90 10	C:\LiteStep\Icons\explorer.bmp 		C:\LiteStep\Icons\explorer2.bmp 	C:\LiteStep\Icons\explorer3.bmp    	"C:\Eigene Dateien\"    
+*Shortcut "trash" 		130 10 	$IconPath$artec_trash1.bmp 		$IconPath$artec_trash2.bmp 		$IconPath$artec_trash3.bmp 		explorer.exe /root,,::{645FF040-5081-101B-9F08-00AA002F954E}
+*Shortcut "Anwendungen" 	130 10 C:\LiteStep\Icons\artec_hd1-1.bmp 	C:\LiteStep\Icons\artec_hd1-2.bmp 	C:\LiteStep\Icons\artec_hd1-3.bmp    	"C:\"    
+*Shortcut "NotePad" 		981 87 C:\LiteStep\Icons\edit_normal.bmp 	C:\LiteStep\Icons\edit_hilited.bmp 	C:\LiteStep\Icons\edit_clicked.bmp    	"C:\Windows\Notepad.exe"    
+
+;-----------------------------------------------------------
+; POPUP MENU
+; und schliesslich die Definition des Inhaltes des Popupmenüs
+; die Schreibweise ist *Popup <Beschreibung> <Pfad>
+; !Popupfolder erstellt ein Untermenü, daß sich selbst füllt.
+; Folder / ~Folder erstellen lediglich ein UnterMenü, dass man
+; selbst füllen kann.
+;-----------------------------------------------------------
+
+*Popup 	"Programs   " "!PopupFolder:C:\Windows\StartMenü\Programme"
+*Popup 	"My Computer" Folder
+	*Popup "   Printers" 		 explorer /root,::{2227A280-3AEA-1069-A2DE-08002B30309D}
+	*Popup "   (A:)  Floppy  3 ½ " a:\
+	*Popup "   (C:)  Windows     " c:\
+	*Popup "   (D:)  Spiele      " d:\
+	*Popup "   (E:)  Daten       " e:\
+	*Popup "   (G:)  CD-ROM      " g:\
+*Popup ~Folder
+*Popup "   Control Panel" Folder
+	*Popup "      Add/Remove Programs" control appwiz.cpl
+	*Popup "      Date/Time" control timedate.cpl
+	*Popup "      Desktop Themes" control themes.cpl
+	*Popup "      Display Properties" control desk.cpl
+	*Popup "      Internet" control inetcpl.cpl
+	*Popup "      LiveUpdate" control s32lucp1.cpl
+	*Popup "      Modems" control modem.cpl
+	*Popup "      Mouse" control main.cpl
+	*Popup "      Multimedia" control mmsys.cpl
+	*Popup "      Network" control netcpl.cpl
+	*Popup "      Passwords" password.cpl
+	*Popup "      Power Management" control powercfg.cpl
+	*Popup "      Regional Settings" control intl.cpl
+	*Popup "      Scanners and Cameras" control sticpl.cpl
+	*Popup "      System Properties" control sysdm.cpl
+	*Popup "      Telephony" control telephon.cpl
+	*Popup "      Tweak UI" control tweakui.cpl
+*Popup ~Folder
+*Popup "   Desktop" !PopupFolder:C:\Windows\Desktop"
+*Popup "       Display Properties" control desk.cpl
+*Popup "       Run" !Run
+*Popup "       Recycle Bin" "!PopupFolder:C:\Recycled"
+*Popup "   Shutdown " Folder
+ 	*Popup "Recycle" 		!Recycle
+	*Popup "Toggel to Explorer" 	C:\Programme\lsenabler\litestepenabler.exe
+	*Popup "Logoff" 		!Logoff
+	*Popup "Shutdown" 		!Shutdown
+*Popup ~Folder
+;-----------------------------------------------------------
