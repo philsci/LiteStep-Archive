@@ -1,0 +1,786 @@
+From: <Microsoft Internet Explorer 5 ‚Å•Û‘¶‚·‚é>
+Subject: DeskFolders 2
+Date: Wed, 28 Jun 2000 13:15:13 +0900
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01BFE102.E52A92E0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.00.2919.6700
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01BFE102.E52A92E0
+Content-Type: text/html;
+	charset="windows-1250"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://D:\doc_html\shell_litestep\DeskFolders%202.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=3D(0037)http://maduin.dasoft.org/deskfolders/ =
+--><!-- DeskFolders 2, based on DA beta template --><!-- Last-modified: =
+06 May 1999 --><HTML><HEAD><TITLE>DeskFolders 2</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1250" =
+http-equiv=3DContent-Type>
+<STYLE type=3Dtext/css>A {
+	COLOR: #a0a0a0; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #606060
+}
+</STYLE>
+
+<META content=3D"MSHTML 5.00.2920.0" name=3DGENERATOR></HEAD>
+<BODY background=3D"file:///D:/doc_html/shell_litestep/DeskFolders =
+2.files/bg.gif"=20
+bgColor=3D#000000 text=3D#ffffff>
+<CENTER>
+<TABLE border=3D0 cellPadding=3D10 cellSpacing=3D0 width=3D"90%">
+  <TBODY>
+  <TR>
+    <TD align=3Dleft colSpan=3D2><FONT face=3D"Tahoma, Verdana, Arial"=20
+      size=3D6><B><FONT color=3D#3c3c3c>D</FONT><FONT =
+color=3D#444444>e</FONT><FONT=20
+      color=3D#4c4c4c>s</FONT><FONT color=3D#545454>k</FONT><FONT=20
+      color=3D#5c5c5c>F</FONT><FONT color=3D#646464>o</FONT><FONT=20
+      color=3D#6c6c6c>l</FONT><FONT color=3D#747474>d</FONT><FONT=20
+      color=3D#7c7c7c>e</FONT><FONT color=3D#848484>r</FONT><FONT=20
+      color=3D#8c8c8c>s</FONT><FONT color=3D#949494> 2</FONT> =
+</B></FONT><BR></TD>
+  <TR>
+    <TD align=3Dleft vAlign=3Dtop>
+      <TABLE border=3D0 cellPadding=3D5>
+        <TBODY>
+        <TR>
+          <TD align=3Dright><FONT color=3D#808080 face=3D"Tahoma, Arial" =
+
+            size=3D2>project name</FONT> </TD>
+          <TD align=3Dleft><FONT color=3D#ffffff face=3D"Tahoma, Arial"=20
+            size=3D2>DeskFolders</FONT> </TD></TR>
+        <TR>
+          <TD align=3Dright><FONT color=3D#808080 face=3D"Tahoma, Arial" =
+
+            size=3D2>version</FONT> </TD>
+          <TD align=3Dleft><FONT color=3D#ffffff face=3D"Tahoma, Arial" =
+size=3D2>2.0=20
+            beta 3</FONT> </TD></TR>
+        <TR>
+          <TD align=3Dright><FONT color=3D#808080 face=3D"Tahoma, Arial" =
+
+            size=3D2>author</FONT> </TD>
+          <TD align=3Dleft><FONT color=3D#ffffff face=3D"Tahoma, Arial" =
+size=3D2><A=20
+            href=3D"mailto:maduin@dasoft.org">Maduin</A></FONT> =
+</TD></TR>
+        <TR>
+          <TD align=3Dright><FONT color=3D#808080 face=3D"Tahoma, Arial" =
+
+            size=3D2>usage</FONT> </TD>
+          <TD align=3Dleft><FONT color=3D#ffffff face=3D"Tahoma, Arial"=20
+            size=3D2>Litestep desktop module</FONT> </TD></TR>
+        <TR>
+          <TD align=3Dright><FONT color=3D#808080 face=3D"Tahoma, Arial" =
+
+            size=3D2>screenshots</FONT> </TD>
+          <TD align=3Dleft><FONT color=3D#ffffff face=3D"Tahoma, Arial" =
+size=3D2><A=20
+            =
+href=3D"http://maduin.dasoft.org/deskfolders/screenshots.html">here</A></=
+FONT>=20
+          </TD></TR>
+        <TR>
+          <TD align=3Dright><FONT color=3D#808080 face=3D"Tahoma, Arial" =
+
+            size=3D2>download</FONT> </TD>
+          <TD align=3Dleft><FONT color=3D#ffffff face=3D"Tahoma, Arial" =
+size=3D2><A=20
+            =
+href=3D"http://maduin.dasoft.org/deskfolders/deskfolders.zip">here</A>=20
+            (12 KB, zipped)</FONT> </TD></TR></TBODY></TABLE></TD>
+    <TD align=3Dmiddle vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/doc_html/shell_litestep/DeskFolders%202.files/df-snap.g=
+if">=20
+    </TD></TR>
+  <TR>
+    <TD align=3Dleft colSpan=3D2><FONT face=3D"Tahoma, Arial" size=3D2>
+      <P><FONT color=3D#808080 face=3D"Tahoma, Verdana, Arial"=20
+      size=3D4><B>Transparency Problems</B> </FONT><BR><BR>A note about=20
+      transparency problems. Some people experience transparency =
+problems with=20
+      DeskFolders 2 in which the background is corrupted. As of beta 3 =
+there is=20
+      now an option to enable a hack to workaround this. Adding a=20
+      "DeskFolderPaintHack" item to your step.rc will cause DeskFolders =
+to use=20
+      an alternate method for transparency. This will (should) fix =
+transparency=20
+      but adds a problem of it's own: if a window is on top of a desk =
+folder=20
+      when DeskFolders is loaded or recycled that window become a part =
+of the=20
+      desk folder's background. I'm working to try and find a more =
+effective=20
+      workaround, until then I hope this is sufficient.=20
+      <P><FONT color=3D#808080 face=3D"Tahoma, Verdana, Arial" =
+size=3D4><B>What is=20
+      DeskFolders?</B> </FONT><BR><BR>DeskFolders is a Litestep desktop =
+module=20
+      which allows you place embeded folders ("desk folders") onto your =
+desktop.=20
+      Desk folders can display the contents of any directory or shell =
+folder,=20
+      such as the Desktop folder or My Computer. You can create multiple =
+desk=20
+      folders with any position or size and in a variety of styles and =
+colors.=20
+      Desk folders are designed to be highly customizable and to blend =
+in well=20
+      with your existing LS desktop. DeskFolders is great for providing =
+quick=20
+      access to files and directories or for allowing you to drag and =
+drop files=20
+      between Explorer and the LS desktop.=20
+      <P><FONT color=3D#808080 face=3D"Tahoma, Verdana, Arial"=20
+      size=3D4><B>Configuration</B> </FONT><BR><BR>Once you've =
+downloaded=20
+      DeskFolders, place the DLL into your Litestep directory and add a=20
+      LoadModule line for it into your step.rc. Note: If desktop.dll is =
+also=20
+      used, it must be loaded before deskfolders.dll. <BR><BR><FONT=20
+      face=3D"Courier New" size=3D2>&nbsp;&nbsp;LoadModule=20
+      C:\Litestep\DeskFolders.dll</FONT> <BR><BR>DeskFolders uses a =
+named=20
+      parameter system for configuration which is different from most =
+Litestep=20
+      modules. The reason I chose this type of system is due to its =
+flexibility:=20
+      parameters can by given in any order and any parameter can be =
+omitted=20
+      independently of the others. Parameter-value pairs take on the =
+form of=20
+      "parameter(value)". Here is typical line for a desk folder: =
+<BR><BR><FONT=20
+      face=3D"Courier New" size=3D2>&nbsp;&nbsp;*DeskFolder =
+folder(desktop)=20
+      position(100, 100) size(300, 200) view(icon)</FONT> <BR><BR>This =
+creates a=20
+      desk folder at screen coordinates 100, 100 with a width and height =
+of 300=20
+      and 200 pixels respectively. The desk folder show the contents of =
+the=20
+      desktop folder in icon view. The position and size parameters are =
+just x,y=20
+      value pairs, negative values can be used to indicate values =
+relative to=20
+      the bottom right corner of the screen.=20
+      <P><FONT color=3D#808080 face=3D"Tahoma, Verdana, Arial"=20
+      size=3D4><B>Parameters</B> </FONT><BR><BR>
+      <CENTER>
+      <TABLE border=3D1 borderColor=3D#404040 cellPadding=3D5 =
+cellSpacing=3D0=20
+      width=3D"100%">
+        <TBODY>
+        <TR bgColor=3D#404040>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Parameter</B></FONT></TD>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Values</B></FONT></TD>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Default</B></FONT></TD>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Description</B></FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>align</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>default, =
+left,=20
+            snapToGrid, top</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>default</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Not=20
+            implemented</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+size=3D2>background</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2><I>bitmap-file</I>,=20
+            <I>color</I>, transparent</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+          size=3D2>transparent</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>The style =
+of the=20
+            desk folder's background</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>border</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><I>boolean</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>false</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Toggles =
+border=20
+            around desk folder</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>browse</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>default,=20
+            inPlace</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>default</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>If =
+inPlace, enables=20
+            in place browsing of folders; otherwise selecting a folder =
+runs=20
+            Explorer</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>contents</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>all, =
+files,=20
+            folders</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>all</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>Determines whether=20
+            the desk folder displays files, folders, or =
+both</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>filter</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>filename=20
+            pattern</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>*</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Includes =
+only=20
+            filenames which match the given pattern (only works with =
+file system=20
+            objects)<FONT size=3D+0></FONT></FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>folder</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2><I>directory</I>,=20
+            controlPanel, desktop, fonts, myComputer, network, printers, =
+
+            programs, recycleBin, startMenu</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>desktop</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Selects =
+the=20
+            directory or system folder to display</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>font</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><I>font-name</I>/<I>font-size</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Selects =
+font used=20
+            by this desk folder, font name and size are seperated by a =
+slash=20
+            (/)</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>labels</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2><I>color</I>,=20
+            transparent</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>black</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Sets the =
+background=20
+            color for icon labels</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>name</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>-</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>-</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Name used =
+to=20
+            identify this desk folder in bang commands</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>overlay</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><I>boolean</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>true</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Controls =
+display of=20
+            overlay images for shortcuts and shares.</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>position</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2><I>coordinate=20
+            pair</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>0, =
+0</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Position =
+of the=20
+            desk folder on the screen (in pixels)</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>scrollbar</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><I>boolean</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>false</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Enable or =
+disable=20
+            scrollbars</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+size=3D2>showHidden</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><I>boolean</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>true</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>Enables/disables=20
+            display of hidden files/directories</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>size</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2><I>coordinate=20
+            pair</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>-1, =
+-1</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Width and =
+height of=20
+            the desk folder (in pixels)</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>text</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+          size=3D2><I>color</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>white</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Sets the =
+foreground=20
+            color for icon labels</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>view</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>icon, =
+smallIcon,=20
+            list, details</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>icon</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Selects =
+the view=20
+            mode for the desk folder (note: details currently not=20
+            implemented)</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>visible</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><I>boolean</I></FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>true</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Sets =
+whether desk=20
+            folder is initially =
+visible</FONT></TD></TR></TBODY></TABLE></CENTER>
+      <P>Color values can be either an RGB value (in HTML #RRGGBB =
+format) or a=20
+      predefined color name: black, blue, cyan, green, red, violet, =
+white, or=20
+      yellow.=20
+      <P><FONT color=3D#808080 face=3D"Tahoma, Verdana, Arial" =
+size=3D4><B>Bang=20
+      Commands</B> </FONT><BR><BR>The bang command interface allows you =
+modify=20
+      the desk folder's properties from hotkeys, shortcuts, etc. The =
+Litestep=20
+      bang command for all commands is "!DeskFolder". The format of a =
+DeskFolder=20
+      bang command is: <BR><BR><FONT face=3D"Courier New"=20
+      size=3D2>&nbsp;&nbsp;!DeskFolder &lt;command&gt;=20
+      &lt;parameter-list&gt;</FONT> <BR><BR>Examples: <BR><BR><FONT=20
+      face=3D"Courier New" size=3D2>&nbsp;&nbsp;*Hotkey Win D =
+!DeskFolder browse=20
+      name(main) folder(desktop)</FONT> <BR><FONT face=3D"Courier New"=20
+      size=3D2>&nbsp;&nbsp;*Hotkey Win U !DeskFolder browse up</FONT> =
+<BR><FONT=20
+      face=3D"Courier New" size=3D2>&nbsp;&nbsp;*Hotkey Win H =
+!DeskFolder hide=20
+      name(someFolder)</FONT> <BR><BR>The command name specifies the =
+action to=20
+      be taken. The parameter lists have the same form as the parameters =
+to=20
+      *DeskFolder. All bang commands take an optional "name" parameter, =
+which=20
+      uniquely identifies the desk folder object to act on (if there is =
+more=20
+      than one desk folder). If name is omitted, the action is performed =
+on the=20
+      first desk folder; if name is "all", the action effects all desk =
+folders.=20
+      Here is the table of commands and their parameters.=20
+      <P>
+      <CENTER>
+      <TABLE border=3D1 borderColor=3D#404040 cellPadding=3D5 =
+cellSpacing=3D0=20
+      width=3D"100%">
+        <TBODY>
+        <TR bgColor=3D#404040>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Command</B></FONT></TD>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Parameters</B></FONT></TD>
+          <TD><FONT color=3D#c0c0c0 face=3D"Tahoma, Arial, Helvetica"=20
+            size=3D2><B>Description</B></FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>browse</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>folder,=20
+up</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Causes =
+the desk=20
+            folder to browse into another folder. If folder is given it=20
+            specifies a full pathname or special folder name. If the up=20
+            parameter is present (it takes no value) the action =
+performed is "up=20
+            one level".</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>hide</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>none</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Hides the =
+desk=20
+            folder.</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>show</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>none</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Shows the =
+desk=20
+            folder (after having been hidden).</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>toggle</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>none</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Toggles =
+the=20
+            show/hide state of the desk folder.</FONT></TD></TR>
+        <TR>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>refresh</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" =
+size=3D2>none</FONT></TD>
+          <TD><FONT face=3D"Tahoma, Arial, Helvetica" size=3D2>Refreshes =
+the=20
+            contents of the desk =
+folder.</FONT></TD></TR></TBODY></TABLE></CENTER>
+      <P><FONT color=3D#808080 face=3D"Tahoma, Verdana, Arial"=20
+      size=3D4><B>Examples</B> </FONT><BR><BR>To give you feel for the =
+DeskFolders=20
+      configuration system and to give some examples of what can be done =
+with=20
+      DeskFolders here are some example configurations you might want to =
+try.=20
+      <BR><BR><FONT face=3D"Courier New" size=3D2>&nbsp;&nbsp;; This =
+desk folder=20
+      looks just like the Explorer desktop. <BR>&nbsp;&nbsp;*DeskFolder=20
+      folder(desktop) <BR><BR>&nbsp;&nbsp;; Places the desktop folder on =
+the=20
+      right for quick access.<BR>&nbsp;&nbsp;*DeskFolder folder(desktop) =
+
+      position(-92, 16) size(80, -48) <BR><BR>&nbsp;&nbsp;; My desk =
+folder:=20
+      provides access to all folders on C: drive =
+<BR>&nbsp;&nbsp;*DeskFolder=20
+      contents(folders) folder(C:\) font(Tahoma/8) labels(transparent)=20
+      name(side) position(16, 32) size(108, -1) view(smallIcon)=20
+      <BR><BR>&nbsp;&nbsp;; Start menu programs =
+<BR>&nbsp;&nbsp;*DeskFolder=20
+      browse(inPlace) folder(programs) labels(transparent) =
+overlay(false)=20
+      position(-144, 32) size(128, 256) view(smallIcon) =
+<BR><BR>&nbsp;&nbsp;;=20
+      Web directory showing HTML files <BR>&nbsp;&nbsp;*DeskFolder=20
+      contents(files) filter(*.htm?) folder(C:\Web) labels(transparent)=20
+      position(96, -96) scrollbar(true) size(400, 88) view(list)=20
+      <BR></FONT><BR>Have fun!=20
+</FONT></P></TD></TR></TBODY></TABLE></CENTER></BODY></HTML>
+
+------=_NextPart_000_0000_01BFE102.E52A92E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/doc_html/shell_litestep/DeskFolders%202.files/df-snap.gif
+
+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
+
+------=_NextPart_000_0000_01BFE102.E52A92E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/doc_html/shell_litestep/DeskFolders 2.files/bg.gif
+
+R0lGODdhMgADAJEAAP///w0NDQAAAAAAACwAAAAAMgADAAACD5SPqcudAaOctNo7nd4cFQA7
+
+------=_NextPart_000_0000_01BFE102.E52A92E0--

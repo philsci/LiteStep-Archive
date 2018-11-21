@@ -1,0 +1,25 @@
+;
+;   nikon's devolution config
+;
+; just as a note: its a good idea to put all the devolution settings
+;                 before any LoadModule lines, otherwise, stuff could
+;		  mess up... ;o
+
+;--devolution settings--------
+font=-altsys-04b_03b-medium-r-normal--8-100-75-75-p-42-ascii-0
+fontfg=#000000
+rootb1=Eterm
+rootb2=beaver
+rootb3=\menu
+
+
+LoadModule dcron.so
+;--dcron settings--------
+dcronFontXY 45 7
+dcronXY 10 738 158 22
+dcronBG /home/nikon/tmp/dcron.gif
+dcronFormat %m/%d - %H:%M%p
+
+LoadModule decor.so
+;--decor settings------
+ShowDecor /home/nikon/tmp/topleft.gif 0 0 124 22

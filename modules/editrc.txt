@@ -1,0 +1,528 @@
+
+	Edit.RC, LiteStep.rc Editor Documentation
+			-or-
+	WHY DID IT JUST DO THAT? AHHHHHHHHH!!!!!!
+
+
+		http://hepkat.com/editrc/
+			-or-
+	 Aich-tee-tee-pea, ignore me, I'm stupid.
+
+
+1) What is it?
+   1a) What is LiteStep?
+   1b) What is step.rc?
+   1c) What is Edit.RC?
+   1d) Why is it special?
+
+2) Installation
+   2a) Full or Light?
+   2b) Common Problems
+   2c) Visual Basic Runtimes
+
+3) Working with Edit.RC
+   3a) Loading Files
+   3b) Loading Step.rc
+   3c) Working in the editor
+   3d) Working with the tabs
+   3e) Saving Files
+   3f) Saving Merged
+   3g) Misc. Squibbles
+   3h) Skin Support
+
+4) Features
+   4a) Completed Features
+   4b) Features In-Progress
+   4c) Unstarted Features
+   4d) Suggested Features
+   4e) Unresolved Issues <g>
+
+5) Version History
+
+6) Contact Information
+
+7) Copyright Information
+
+
+
+
+
+1) What is it?
+
+   1a) What is LiteStep?
+
+LiteStep is one of many, and one of the best replacement shells
+for Windows95, Windows98, NT4 and Windows2000.
+
+Basically what LiteStep does is allow users to remove, or change
+their Task Bar, Start Menu, and Desktop, to just about anything
+imaginable.
+
+Unfortunately, because LiteStep has so many options, it can be
+a bit confusing to a new user.  This is where Edit.RC comes in.
+
+For more information about LiteStep, please see one of these
+fine web sites:
+
+http://www.litestep.com/
+http://www.litestep.net/
+http://www.litestep.org/
+http://floach.pimpin.net/
+http://tinomen.chunkymunky.com/
+http://chunkmunky.com/modulo/
+
+Or the launch-site for anything and everything LiteStep related:
+http://chunkymunky.com/lsportal/
+
+   1b) What is step.rc?
+
+Step.rc is the LiteStep configuration file, it holds all the
+settings for everything LiteStep related.  Thus it can get a 
+little messy and confusing,  This is where Edit.RC comes in.
+				(seeing a trend here are we?)
+
+
+   1c) What is Edit.RC?
+
+Edit.RC is currently a simple text editor with specific functions
+for LiteStep configuration files.  Currently, LiteStep only uses
+Step.rc and Theme.rc files.  Edit.RC allows users to split
+LiteStep files into multiple files, or multiple different tabs in
+the editor, and then edit each section separately.
+
+
+   1d) Why is it special?
+
+Currently Edit.RC differs from other text editors in the fact that
+it has some LiteStep specific functions, and differs from other
+LiteStep Configuration Editors because it is still mostly
+text-based and not graphical.
+
+This will allow users to familiarize themselves with step.rc, and
+LiteStep Configuration, rather than holding shades over their
+eyes.
+
+Edit.RC, when feature-complete, will hopefully help new users jump
+right in to editing the Step.rc, with error checking, Syntax
+Highlighting and "Help Tips" that appear while typing.  When the
+user is ready to move on, these features can be disabled or
+customized to make a leaner editor specific for each user.
+
+
+
+
+2) Installation
+
+   2a) Full or Light?
+
+***The current release of Edit.RC does not have a Light Version.***
+***		Please ignore this section			***
+
+Edit.RC Comes in two distributions, Full, and Light.
+
+Download the Light Version if you have already installed a version
+of Edit.RC, or if you think you have the Visual Basic Runtime Files
+(It's Very Small, so if you're not sure, you might want to try
+anyway).
+
+The Light Version includes only editrc.exe, any specific settings
+in editrc.ini, and this documentation.
+
+If the Light Version gives you an error, you will have to install
+the Full version.  The full version includes a setup program
+allowing you to install Edit.RC through a graphical user interface,
+the Edit.RC Program, Documentation, and all required runtime files.
+
+To uninstall the Light Version delete the directory that it is
+stored in.
+
+To uninstall the Full Version, under Control Panel, select
+Add/Remove Programs, select Edit.RC and Choose Remove.
+
+
+   2b) Common Problems
+
+
+If you receive an error when trying to run the Light Version of
+Edit.RC, you probably need to install the Full Version.
+
+Sometimes even if you have the files needed by Edit.RC, they are
+not the most current version and Edit.RC will return an error
+message.
+
+
+   2c) Visual Basic Runtimes
+
+
+Edit.RC is a Visual Basic 6 program, and requires the Visual Basic
+Runtime files.  Edit.RC also currently uses a few extra controls
+that are needed.
+
+Files that Edit.RC Uses are located in the Windows System
+directory, and may include (but are not limited to);
+
+msvbvm60.dll
+RICHTX32.OCX
+MSCOMCTL.OCX
+RICHED32.DLL
+VB6STKIT.DLL
+COMCAT.DLL
+STDOLE2.TLB
+ASYCFILT.DLL
+OLEPRO32.DLL
+OLEAUT32.DLL
+
+
+
+
+3) Working with Edit.RC
+
+   3a) Loading Files
+
+
+Edit.RC Loads only *.rc files currently.  It only differentiates
+between Step.rc files and other .rc files.  Here we will talk
+about loading files in general, the next section will describe
+how Step.rc is loaded differently.
+
+
+There are several methods to Load a file.
+
+Under the file menu, you can select "Load File" or "Load Directory"
+Clicking on the Folder icon on the toolbar is the same as selecting
+"Load File"
+
+
+When you select "Load File", a dialog will appear asking you to
+select a file.  Select an .rc file.  If the file is a Step.rc file
+it will be loaded according to the description in the next section,
+otherwise it will be loaded into a tab, the tab name will be set
+to the file's name (without the .rc suffix).
+
+"Load Directory" works a bit differently.  If you have a directory
+set under the Options window, "Load Directory" loads all files from
+that directory.
+If no directory is set under Options, then all .rc files in the
+Edit.RC program directory are loaded.
+
+You can set Edit.RC to "Load Directory" when it starts by selecting
+the "Load RC Directory at Startup." option under the Options
+window.
+
+You can also control whether or not Step.rc file is loaded when you
+select "Load Directory" by changing the option in the Options 
+Window.
+
+To get to the Options window, Select Tools and then Options from
+the main Menu Bar.
+
+   3b) Loading Step.rc
+
+
+The Step.rc file is loaded differently than other files, because
+Edit.RC checks for Step.rc blocks.
+A Step.rc block is a special comment recognized only by Edit.RC,
+when Edit.RC encounters these blocks it will ask you whether or not
+you want to load each block into a separate editor tab.
+
+If you choose yes, each block will be loaded into a separate tab
+with the block name and then the word "block" as a caption.  The
+actual comment lines that contain the block names will be ignored.
+
+If you choose no, step.rc will be loaded into a single tab just
+like any other file.
+
+On the options window you can tell Edit.RC to always load Step.rc
+into blocks, without prompting you.
+
+Also note, whenever loading step.rc into blocks, a tab called
+"step block" is always created.  If there is any information at the
+beginning of the file that is not in a block, it will be loaded
+into "step block", otherwise "step block" is left blank.
+
+
+Definition: "Step.rc block" is a block of text in a Step.rc file
+	that is noted with a special header comment.
+
+
+   3c) Working in the editor
+
+
+The editor is probably the simplest thing right now, just type!
+Oh, there are a few other functions.  Cut, Copy, Paste, Clear,
+Undo, Find, and Replace are all available under the Edit menu, or
+by clicking on the appropriate toolbar buttons.
+
+I won't go into detail about these options, if you need more help
+with any of these features please consult the help file for "any
+old text editor" <grin>
+
+
+   3d) Working with the tabs
+
+
+Selecting a tab on the tab bar, at the bottom of the window,
+switches between different open documents.
+
+To increase speed, standard documents are not loaded until you
+click on their tab, and therefore the first time you click on a
+tab there might be a slight delay.  When you right click on a
+tab it brings up a replica of the File menu as a pop-up menu.
+
+If there are more documents open than can be displayed on the 
+Edit.RC window, two small arrow buttons will show up to the right
+of the tabs.  Use these to scroll the tabs in either direction.
+
+
+   3e) Saving Files
+
+
+*Growl* I just tried saving a few things and found two new bugs.
+So please read the 'Unresolved Issues' section before attempting
+a save.
+
+Both of these things were working before, but anyway...
+
+
+To save an open file Click "Save Current" under the file menu,
+or click on the Disk icon on the tool bar.
+The file will only be saved if it has been modified.
+
+Use "Save As" to save a file with a different file name.
+
+"Save All" checks to see which files have been modified, and
+saves them.
+
+For information on "Save Merged", please see the next section.
+
+You can access any of these commands through the File menu, or
+by clicking on the small arrow next to the Save Toolbar button.
+
+Please note, Saving block files does not currently work, you must
+use "Save Merged" or "Save As" to save them.
+
+
+   3f) Saving Merged
+
+
+Using "Save Merged", which appears under the File Menu and when
+you click on the small arrow next to the Save toolbar button, saves
+all open files to Step.rc.  The Step.rc file is separated with
+Step.rc blocks so when you open it again in Edit.RC it will show up
+in multiple tabs.
+
+"Save Merged" creates the merged Step.rc in the directory specified
+under Options for "Main .RC Directory", if that directory is not set
+it creates the step.rc file in the main application directory.
+
+
+   3g) Misc. Squibbles
+
+
+On the find/replace window there is a small icon pointing up or down,
+click it to switch between find and replace.
+
+You can change a few options by selecting Options under the Tools
+menu, including the editor font.  Beware, some options do not take
+effect until Edit.RC is restarted.
+
+The Numbers in the bottom right of the status bar are the coordinates
+your mouse is at, this is useful for positioning shortcuts or
+modules.
+
+Some standard editing keyboard shortcuts work, look out Spiderman,
+more are coming!
+
+The disk in the Save Merged toolbar button look kind of like old (blue)
+Macintoshes.
+
+The icons (except for the Edit.RC logo) are copyright and courtesy of
+Copland Icons, used with permission.
+
+You can create a new file by clicking on the "New" toolbar button, or
+selecting "New" under the File menu.
+
+To reset Edit.RC to the default options, delete editrc.ini in the
+main application directory.
+
+
+   3g) Skin Support
+
+Edit.RC Skin support is simple.  You can not currently change the skin
+from within the program, but you can edit format.ini in your Edit.RC
+directory to change bitmaps and colors.
+If format.ini does not exist, Edit.RC loads in "Lite Mode", which means
+it loads faster but looks nasty.  In the future I plan to make "Lite
+Mode" look better.
+
+
+
+
+4) Features
+
+   4a) Completed Features
+
+
+Tabbed Editor
+New Files
+Loading Files
+Loading Directory
+Loading Step.rc
+Parsing Step.rc blocks
+Saving Files
+Saving Merged
+Find
+Replace
+Cut
+Copy
+Paste
+Undo
+Change Font Option
+Load RC Dir. at startup toggle
+Load Step.rc when loading RC Dir. toggle
+Always load Step.rc blocks toggle
+Change RC Directory Option
+XY Mouse Coordinates
+Other Misc. Blarbs
+Skin Support
+
+
+   4b) Features In-Progress
+
+
+Close current file
+Syntax Highlighting
+
+
+   4c) Unstarted Features
+
+
+Syntax Tips while typing
+Multiple Language Support
+Show toolbar toggle
+format saved files
+Associate with .RC files
+show status bar toggle
+check for loaded modules
+error checking (kind of goes with above)
+Word Wrap toggle
+Load any directory
+save step.rc to any directory
+better file handling in general
+Edit|Select All
+Better merging files intelligence
+merging macros
+'Create.RC Wizards' (separate program)
+remove comctl32.ocx dependencies
+remove rchtxt32.ocx dependencies
+evolve to comply with any future theme standards
+plus a couple things I've forgotten
+plus a couple things I've intentionally forgotten <g>
+
+   4d) Suggested Features
+
+Load more than just .rc files (not planned)
+Translucency (ugh)
+
+   4e) Unresolved Issues <g>
+
+Saving a modified New File without using Save As crashes.
+'Cancel' when asked to save a file does not stop program from exiting.
+Saving a file without adding the .rc extension can mess up tab captions
+	and does not append the .rc extension automatically.
+Save All still asks you if you would like to save each file
+When the Main .RC directory is non-existent and Save Merged is used,
+	program crashes.
+There's got to be new ones that I'm missing :)
+
+
+
+
+5) Version History
+
+0.1.15- Friday, February 4, Third Release
+
+Skin support added (some features temporarily removed)
+Because this version was created long ago, I do not remember everything
+changed/removed.
+
+0.1.8- Sunday, November 7, Second Release
+
+Menus Finished (and working)
+Toolbar Finished (and working)
+New File added
+Load File added
+Load Directory Corrected
+Step.rc parsing finished and fixed (and fixed, and fixed, and fixed)
+Save Current rewritten
+Save As added
+Save all rewritten
+Save Merged rewritten
+Undo,Cut,Copy,Paste,Clear using API calls instead of Sendkeys
+Find/Replace added.
+Textbox switched with RichTextBox
+A *lot* more error checking (and still a lot of bugs)
+Only loads as many textboxes as needed (previously loaded WAY too many)
+Uses an array for faster loading
+Startup time speeded up
+exit time speeded up
+Only loads files when needed
+New Icons (Courtesy of Copland Icons)
+Status bar replaced (trying to get rid of comctl32.ocx)
+Load RC Directory at startup toggle
+Load step.rc when loading directory toggle
+Editor Font Options
+Always load step.rc blocks toggle
+change rcpath option
+remembers size and position on startup
+Sweet little about box
+right click context menu on tabs
+MAJOR code restructuring, makes things *much* easier now
+
+0.1.6- First Public Release (Preview Build)
+
+Basic functions.
+
+6) Contact Information
+
+
+Author: 
+Dana Browder - NewView Productions/Hepkat Design
+az@hepkat.com
+http://www.hepkat.com/
+
+Web Site:
+http://hepkat.com/editrc/
+
+
+7) Copyright Information
+
+Edit.RC's (called 'the program' from this point forward) source
+code, executable, intellectual rights and any accompanying articles,
+including, but not limited to, this documentation are Copyright
+1999 Dana Browder, under the alias NewView Products and/or Hepkat
+Design, with the possible exclusions and exceptions contained
+herein.  The icons used on the toolbar, although some are slightly
+modified, are Copyright 1998/1999 Copland Icons, Used with permission.
+For Copland Icons contact information, please contact the author of
+the program.  Certain files included in the full package of this
+program are copyright Microsoft Corporation, or their affiliates,
+used with permission of the License granted with the Visual Basic 6
+software.  Microsoft Corporation can be contacted at
+http://www.microsoft.com/.
+
+The program may be freely distributed or modified in any way for any
+non-profit similar venture, or any profitable dissimilar venture.
+The description of similar or dissimilar ventures is the sole
+responsibility of the copyright holder.  The program places no
+restrictions on the inclusion of this copyright notice in any future
+efforts containing the program.
+
+Source code for the program is available by email request, up until
+the time, when and if it comes, in which it is put on the program's
+Web Site, then it will no longer be distributed by email, but will
+be available for download from the internet.
+
+
+    FREE SOFTWARE     -     FREE SOURCE     -     FREE MINDS
+
