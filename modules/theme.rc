@@ -1,0 +1,90 @@
+;--------------------------------------------------------------
+; Crimson_Blue_Blood Desktop - Theme by Thomas Nebel
+; Date  : 25.03.2000
+; EMail : tnebel@htwm.de
+;
+; Die Einstellungen in der Theme.rc überschreiben die 
+; Einstellungen in der step.rc. Es gibt kein Patentrezept
+; für das Handling von Themen, da von Litestep keine 
+; Organisationsstruktur vorgegeben ist. Es empfielt sich aber
+; folgendes:
+;	- einen "Themes"-Folder unter Litestep, in dem die 
+;	  Themen in eigenen Verzeichnissen liegen.
+;	- Eigene Verzeichnisse für Icons, da diese sich meist
+;	  nach dem Geschmack des Benutzers richten und nicht
+;	  immer mit geändert werden sollten
+;	- Das Angleichen der theme.rc´s ist zwar mit Zeit
+;	  verbunden, verkürzt aber später den Aufwand zum
+;	  Ändern des Themas enorm.  
+;--------------------------------------------------------------
+
+
+;--------------------------------------------------------------
+Theme Settings
+;--------------------------------------------------------------
+
+PixMapPath      C:\LiteStep\Themes\Crimson_Blue_Blood\Images\		; ImagePath for this Theme
+LSTimeThemeFile C:\litestep\themes\Crimson_Blue_Blood\lstime.thm	; Path to clock theme
+
+;------------------------------------------------------------
+; TASK BAR & SYSTEM TRAY SETTINGS
+;------------------------------------------------------------
+
+Notaskbar							; Disable Taskbar
+SystrayOrientation right bottom					; System Tray Orientation
+SystrayWrapCount 8						; System Tray Alignment
+
+;------------------------------------------------------------
+; WHARF SETTINGS
+;------------------------------------------------------------
+
+WharfTitlebarPix 	Crimson_Wharf_Titlepix.bmp		; Wharf titlebar pic
+DefaultBackPix 		Crimson_default_Wharfpix.bmp		; Bitmap to use as the Default Wharf button
+WharfBevelWidth 	0					; Border width on wharf items
+WharfPressOffset 	0					; Pixels to indent image on click
+WharfAutoUnpress						; Process action once mouse button is down and back up
+;WharfCloseOnSwitch						; This Setting does not work with animated wharf
+;WharfNoAnim 							; Do not animate wharf
+WharfAnimStep 		64					; Wharf Animation distance
+WharfAnimDelay 		50					; Wharf Animation delay
+WharfDblClickXPosition  150					; Wharf undocked Position - Applied as ScreenWidth - X
+
+;------------------------------------------------------------
+; POPUP MENU DEFINITIONS
+;------------------------------------------------------------
+
+HotListName		"C R I M S O N"				; Hotlistname
+PopupTitlePix 		Crimson_default_Popup_Titlepix.bmp	; Popup menu title graphic
+PopupEntryPix 		Crimson_default_bar.bmp			; Popup menu general graphic
+PopupSelEntryPix 	Crimson_enlighted_bar.bmp		; Popup menu selected graphic
+;PopupBottomPix		bottom-bar.bmp				; Popup menu bottom graphic
+PopupTitleColor 	A0D0F0					; Popup menu title font color
+PopupEntryColor 	A0A0A0					; Popup menu general font color
+PopupSelEntryColor 	A0D0F0					; Popup menu selected font color
+PopupSubMenuHeight 	20					; Popup menu graphic height
+PopupFontFace 		"Arial"					; Popup menu font
+PopupFontHeight 	14					; Popup menu font size
+;PopupFixedWidth	200
+Minpopupwidth 		200					; Popup menu minimum width
+NoPopupFolderIcon						; No Popup Folder Icon
+NoPopupBevel							; Popup menu disabled bevel
+;ShowPopupIcons
+;PopupIconSize           16
+
+
+;------------------------------------------------------------
+; VIRTUAL WINDOWS MANAGER SETTINGS
+;------------------------------------------------------------
+
+VWMNoAuto							; VWM will not switch windows automatically
+VWMNoGathering							; VWM will not gather windows when closing or recycling Litestep
+VWMDesksX		2
+VWMDesksY		2
+VWMVelocity 		300					; VWM switching window resistance
+VWMSecurityDistance 	5					; VWM distance from edge of screen to switch windows
+VWMForeColor 		A0D0F0					; VWM Mini-Window color
+VWMBackColor 		FF00FF					; VWM Non-Current Mini-Windows Color
+VWMSelBackColor 	FFFFFF					; VWM Current Mini-Window Select Color
+VWMBorderColor 		A0D0F0					; VWM Mini-Window Border Color
+VWMDesksX 		2					; VWM X # of Virtual Windows
+VWMDesksY 		3					; VWM Y # of Virtual Windows

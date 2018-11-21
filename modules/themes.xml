@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE rss PUBLIC "-//Netscape Communications//DTD RSS 0.91//EN" "http://my.netscape.com/publish/formats/rss-0.91.dtd">
+<rss version="0.91">
+
+   <channel>
+      <title>LSThemes.org</title>
+      <link>http://lsthemes.org</link>
+      <description>LSThemes - LiteStep Themes</description>
+      <language>en-us</language>
+      <copyright>Copyright 2000, S. Dunstan</copyright>
+      <managingEditor>jalist@lsthemes.org</managingEditor>
+      <webMaster>jalist@lsthemes.org</webMaster>
+      
+    <item>
+       <title>xOSii - WarpedMedia</title>
+       <link>http://lsthemes.org/comment.php?id=2&amp;type=theme</link>
+       <rating>Not rated yet.</rating>
+    </item>
+    <item>
+       <title>itqe - jalist</title>
+       <link>http://lsthemes.org/comment.php?id=1&amp;type=theme</link>
+       <rating>Not rated yet.</rating>
+    </item>
+   </channel>
+</rss>
